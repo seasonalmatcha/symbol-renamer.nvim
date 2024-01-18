@@ -1,0 +1,57 @@
+*symbol-renamer.nvim*       For Neovim >= 0.8.0      Last change: 2024 Jan 19
+
+Author: Alan H
+
+
+==============================================================================
+CONTENTS                                        *symbol-renamer.nvim-contents*
+
+Configuration..........................: |symbol-renamer.nvim-configuration|
+Usage..................................: |symbol-renamer.nvim-usage|
+Commands...............................: |symbol-renamer.nvim-commands|
+License................................: |symbol-renamer.nvim-license|
+
+
+==============================================================================
+CONFIGURATION                              *symbol-renamer.nvim-configuration*
+
+If you don't need customization, then the setup is not necessary
+
+Otherwise, here is an example of the setup
+
+>lua
+  require("symbol-renamer").setup({
+    borderchars = { "─", "│", "─", "│", "╭", "╮", "╯", "╰" },
+    relative = "cursor",
+    focusable = true,
+    width = 40,
+    height = 1,
+    line = "cursor+2",
+    col = "cursor",
+    padding = { 0, 1, 0, 1 },
+  })
+<
+
+
+==============================================================================
+USAGE                                              *symbol-renamer.nvim-usage*
+
+>lua
+  vim.keymap.map("n", "<leader>r", function()
+    require("symbol-renamer").open()
+  end)
+<
+
+
+==============================================================================
+COMMANDS                                        *symbol-renamer.nvim-commands*
+
+* `:SymbolRenamerOpen` - Open symbol renamer dialog
+
+
+==============================================================================
+LICENSE                                          *symbol-renamer.nvim-license*
+
+MIT license
+
+vim:tw=78:ts=8:noet:ft=help:norl:
