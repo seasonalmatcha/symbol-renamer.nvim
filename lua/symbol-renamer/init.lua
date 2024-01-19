@@ -18,7 +18,7 @@ local M = {
 function M.open()
   local curr_name = vim.fn.expand("<cword>" .. " ")
   if curr_name == "" then
-    vim.notify("No selected word", vim.log.levels.ERROR)
+    vim.notify("No selected word", vim.log.levels.ERROR, { title = "symbol-renamer.nvim" })
     return
   end
 
