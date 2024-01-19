@@ -39,6 +39,6 @@ vim.keymap.map("n", "<leader>r", function()
 end)
 ```
 
-## COMMANDS
+## Commands
 
 - `:SymbolRenamerOpen` - Open symbol renamer dialog
