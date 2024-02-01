@@ -30,8 +30,8 @@ function M.open()
     startinsert
   ]])
 
-  map({ "i", "n" }, "q", "<cmd>q<cr>", { buffer = 0 })
-  map({ "i", "n" }, "<esc>", "<cmd>q<cr>", { buffer = 0 })
+  map({ "n" }, "q", "<cmd>q<cr>", { buffer = 0 })
+  map({ "n" }, "<esc>", "<cmd>q<cr>", { buffer = 0 })
 
   map({ "i", "n" }, "<cr>", function()
     M.apply(curr_name, win_id)
